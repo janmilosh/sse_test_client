@@ -12,7 +12,6 @@ $(function() {
   
   evtSrc.onmessage = function(e) {
     var data = JSON.parse(e.data);
-    console.log(data);
     try {
       addPointsToMap([[data.lat, data.lon]]);
     } catch(e) {
