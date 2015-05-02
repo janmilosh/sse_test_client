@@ -11,11 +11,13 @@ $(function() {
   var evtSrc = new EventSource("http://192.168.254.39:5000/subscribe");
   
   evtSrc.onmessage = function(e) {
-    var data = JSON.parse(e.data);
-    try {
-      addPointsToMap([[data.lat, data.lon]]);
-    } catch(e) {
-      console.log(e)
+    if (e.data !== 'None') {
+      var data = JSON.parse(e.data);
+      try {
+        addPointsToMap([[data.lat, data.lon]]);
+      } catch(e) {
+        console.log(e)
+      }
     }
   };
 
