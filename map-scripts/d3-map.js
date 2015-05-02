@@ -6,7 +6,7 @@ $(function() {
       circleLarge,
       pathWidth = 0.25,
       initialFillColor = 'yellow',
-      fadeOutFillColor = 'blue'    
+      fadeOutFillColor = 'limegreen'    
 
   var evtSrc = new EventSource("http://192.168.254.39:5000/subscribe");
   

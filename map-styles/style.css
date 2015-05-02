@@ -1,6 +1,7 @@
 body#background {
   margin: 0;
-  background-color: #222;
+  background-color: #475A7C;
+
 }
 
 img {
@@ -16,28 +17,18 @@ svg {
   background: none;
 }
 
-h1 {
-    text-align: center;
-    color: #1A80C4;
-    font-family: helvetica, sans-serif;
-}
-
-p {
-  line-height: 1;
-}
-
 .background {
   fill: none;
   pointer-events: all;
 }
 
 .feature {
-  fill: #000;
+  fill: #181D3D;
 }
 
 .mesh {
   fill: none;
-  stroke: #555;
+  stroke: #999;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
