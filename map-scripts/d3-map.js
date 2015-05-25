@@ -8,7 +8,7 @@ $(function() {
       initialFillColor = 'yellow',
       fadeOutFillColor = 'limegreen'    
 
-  var evtSrc = new EventSource("http://192.168.254.39:5000/subscribe");
+  var evtSrc = new EventSource("http://jmilosh.com/subscribe");
   
   evtSrc.onmessage = function(e) {
     if (e.data !== 'None') {
